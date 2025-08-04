@@ -305,3 +305,76 @@ footer::before {
         max-height: 200px;
     }
 }
+
+/* Add this to your existing noticias.css */
+.highlight-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(255, 45, 117, 0.5);
+}
+
+/* Add to your existing anuncios.css */
+.announcement-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 168, 255, 0.4);
+    box-shadow: 
+        0 0 25px rgba(0, 168, 255, 0.3),
+        0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 1.5rem auto;
+    display: block;
+    transition: all 0.3s ease;
+    aspect-ratio: 16/9;
+}
+
+.announcement-image:hover {
+    transform: scale(1.02);
+    box-shadow: 
+        0 0 35px rgba(0, 168, 255, 0.4),
+        0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .announcement-image {
+        max-width: 100%;
+        max-height: 350px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-image {
+        max-height: 250px;
+        border-width: 1px;
+        box-shadow: 
+            0 0 15px rgba(0, 168, 255, 0.25),
+            0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Highlight tag style */
+.highlight-tag {
+    display: inline-block;
+    background: var(--announcement-blue);
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    box-shadow: 0 0 12px rgba(0, 168, 255, 0.5);
+}
