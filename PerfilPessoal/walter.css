@@ -458,7 +458,6 @@ footer p {
   margin: 0.5rem 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
-
 /* Estilo do botão */
 .footer-button {
   background: linear-gradient(145deg, #37FDFC 0%, #1A9BA6 100%);
@@ -473,8 +472,7 @@ footer p {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 0 15px rgba(55, 253, 252, 0.3);
-}
-
+  }
 .footer-button:hover {
   background: linear-gradient(145deg, #F9A11B 0%, #D18A17 100%);
   transform: translateY(-3px);
